@@ -1,0 +1,10 @@
+.footer-item h2{
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+.quicklinks ul li{
+    padding: 5px 0;
+    list-style-type: none;
+}

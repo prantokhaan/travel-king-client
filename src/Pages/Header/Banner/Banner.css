@@ -1,0 +1,42 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: rgb(245, 245, 240);
+}
+.banner .content{
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1000;
+}
+.banner .content h3 {
+    font-size: 3.5rem;
+    color: rgba(241, 241, 236, 0.664);
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
+    font-family: 'Oswald', sans-serif ;
+}
+.banner .content p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+.video-container video{
+    position: relative;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 630px;
+    object-fit: cover;
+}
+.controls{
+    background-color: rgba(17, 0, 0, 0.281);
+    bottom: 50px;
+    border-radius: 50px;
+}
+.controls .vid-btn{
+    border-radius: 20px;
+}
+

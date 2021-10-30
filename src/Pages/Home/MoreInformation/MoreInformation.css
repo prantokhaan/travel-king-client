@@ -1,0 +1,55 @@
+.about{
+    background-color: rgba(90, 85, 90, 0.082);
+}
+.section {
+  padding: 4.5rem 0 2.5rem;
+}
+.about-data {
+  text-align: left;
+  margin-top: 8rem;
+  padding: 2rem;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+.about-description {
+  margin-bottom: 2rem;
+}
+
+.about-img {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img-overlay {
+  overflow: hidden;
+}
+
+.about-img-one {
+  width: 260px;
+}
+
+.about-img-two {
+  width: 360px;
+  animation: zoomOutIn01 7s linear infinite;
+
+}
+
+.about-img-one, 
+.about-img-two {
+  transition: all 1s ease;
+}
+
+.about-img-one:hover, 
+.about-img-two:hover {
+  transform: scale(0.9);
+}

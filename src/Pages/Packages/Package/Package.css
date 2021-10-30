@@ -1,0 +1,60 @@
+@keyframes zoomOutIn01{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+}
+
+.box{
+  flex:1 1 30rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 32px rgba(24, 19, 19, 0.1);
+}
+
+.box img{
+  height: 300px;
+  width: 80%;
+  border-radius: 10px;
+  object-fit: cover;
+  padding-top: 20px;
+}
+.box:hover img{
+    animation: zoomOutIn01 7s linear infinite;
+}
+
+.box .content{
+  padding: 20px;
+}
+
+.box .content h3{
+  font-size: 20px;
+  color:#333;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif ;
+}
+.box .content h3:hover{
+    font-size: 22px;
+    color: #6e05df;
+}
+
+.box .content h3 i{
+  color:#8c38ee;
+}
+
+.praragraph {
+  font-size: 14px;
+  color:#666;
+  line-height: 25px;
+}
+
+.country{
+  font-size: 15px;
+  color: white;
+  background-color: #6e05df;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 3px 6px;
+}

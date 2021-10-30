@@ -1,0 +1,60 @@
+
+
+.experience-content {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  background-color: rgba(143, 180, 168, 0.144);
+  padding: 4rem;
+  border-radius: .8rem;
+}
+.experience-data{
+    background-color: rgba(109, 48, 231, 0.815);
+    padding: 3rem 4rem;
+    border-radius: .6rem;
+}
+
+.experience-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+.experience-description{
+    color: white;
+}
+
+.experience-img {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.experience-img-one, 
+.experience-img-two {
+  transition: 1s;
+}
+
+.experience-img-one:hover, 
+.experience-img-two:hover {
+  transform: scale(0.9);
+}
+
+.experience-overlay {
+  overflow: hidden;
+  box-shadow: 20px 20px 5px 5px rgba(247, 244, 241, 0.356);
+}
+
+.experience-overlay:nth-child(1) {
+  width: 700px;
+  margin-left: 10rem;
+
+}
+
+.experience-overlay:nth-child(2) {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -3rem;
+  right: 9rem;
+  animation: zoomOutIn01 7s linear infinite;
+
+}

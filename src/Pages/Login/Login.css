@@ -1,0 +1,17 @@
+.googleButton{
+    padding: 30px;
+    border: 2px solid #8338ec;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.googleButton:hover{
+    font-size: 22px;
+    transition: all 0.5s ease;
+    color: white;
+    background-color: rgb(155, 152, 152);
+}
+.fa-google{
+    margin-right: 1px;
+}

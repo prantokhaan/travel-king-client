@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/QbfSKnr/image.png",
+    "location": {
+      "place": "positano",
+      "country": "italy"
+    }
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/CPGzBWD/image.png",
+    "location": {
+      "place": "eiffel tower",
+      "country": "france"
+    }
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/5GGwPzH/image.png",
+    "location": {
+      "place": "unknown",
+      "country": "norway"
+    }
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/RjgF0ZX/image.png",
+    "location": {
+      "place": "venice",
+      "country": "italy"
+    }
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/ckZTsYj/image.png",
+    "location": {
+      "place": "unknown",
+      "country": "unknown"
+    }
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/QpRJ71H/image.png",
+    "location": {
+      "place": "piazza dell",
+      "country": "italy"
+    }
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/NKw9PqV/image.png",
+    "location": {
+      "place": "ninh vinh",
+      "country": "vietnam"
+    }
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/MkbnSQh/image.png",
+    "location": {
+      "place": "james bond island",
+      "country": "thailand"
+    }
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/MS4NtYb/image.png",
+    "location": {
+      "place": "south tyrol",
+      "country": "italy"
+    }
+  },
+  {
+    "id": 10,
+    "img": "https://i.ibb.co/XFYcvp9/image.png",
+    "location": {
+      "place": "sabah",
+      "country": "malaysia"
+    }
+  }
+]

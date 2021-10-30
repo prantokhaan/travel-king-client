@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+.booking-image{
+    position: relative;
+    margin-bottom: 10px;
+}
+.booking-info{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+.booking-info h1{
+    text-transform: uppercase;
+    font-size: 100px;
+    color: rgb(255, 253, 253);
+    letter-spacing: 20px;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
+    font-family: 'Permanent Marker', cursive;
+}
+.booking-info h3{
+    color: rgb(255, 253, 253);
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 20px;
+
+}
+.booking-items h6{
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.651);
+}
+.booking-image button{
+    margin-left: 43%;
+}

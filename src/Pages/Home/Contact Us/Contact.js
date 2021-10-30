@@ -5,6 +5,18 @@ import contactImg from '../../../images/Contact us-amico.svg'
 const Contact = () => {
     return (
       <div>
+        <h1 class="heading">
+          <span>C</span>
+          <span>O</span>
+          <span>N</span>
+          <span>T</span>
+          <span>A</span>
+          <span>C</span>
+          <span>T</span>
+          <span className="space">{""}</span>
+          <span>U</span>
+          <span>S</span>
+        </h1>
         <div>
           <div className="container d-flex">
             <div className="contact-img">

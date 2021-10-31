@@ -8,7 +8,7 @@ const Login = () => {
   const location = useLocation();
   const history = useHistory();
   const redirect = location.state?.from || "/home";
-  console.log(location.state)
+  console.log(location)
 
   const handleGoogleLogin = () => {
     signInUsingGoogle().then((result) => {

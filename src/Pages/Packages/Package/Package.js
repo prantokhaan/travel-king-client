@@ -4,7 +4,7 @@ import usePackages from '../../../Hooks/usePackages';
 import './Package.css'
 
 const Package = ({place}) => {
-    const {name, image, country, id, description} = place;
+    const {name, image, country, _id, description} = place;
 
     return (
       <div>
@@ -18,12 +18,12 @@ const Package = ({place}) => {
 
             <p className="mt-4 praragraph">
               {description.slice(0, 200)}
-              <Link to={`/package/${id}`} className="text-decoration-none">
+              <Link to={`/place/${_id}`} className="text-decoration-none">
                 <p className="text-primary">Read More</p>
               </Link>{" "}
             </p>
 
-            <Link to={`/package/${id}`}>
+            <Link to={`/place/${_id}`}>
               <button className="secondary-button ms-0"><i className="fas fa-plane"></i> Book A Flight</button>
             </Link>
           </div>

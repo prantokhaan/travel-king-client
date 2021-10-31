@@ -1,30 +1,51 @@
 import React from 'react';
 import Rating from 'react-rating';
-import { Link, NavLink } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
+import useFirebase from '../../../Hooks/useFirebase';
 import './BookingDetail.css'
 
-const BookingDetail = ({bookingDetail}) => {
+const BookingDetail = ({place}) => {
+  const {user} = useFirebase();
+  const location = useLocation();
+  const history = useHistory();
+  location.pathname = "/my-bookings"
+  const redirect = location.pathname; 
     const {
       name,
       image,
       coverImage,
       rating,
-      services,
       whyToGo,
       monthToVisit,
       country,
-      id
-    } = bookingDetail;
-    const navLinkStyle = {
-      textDecoration: "none",
-      color: "black",
-      margin: "10px 0",
-      padding: "10px 10px",
-      fontSize: "16px",
-      borderRight: "1px solid black",
-      borderLeft: "1px solid black",
-      
-    };
+      _id,
+      hotel1,
+      hotel2,
+      hotel3,
+      spot1,
+      spot2,
+      spot3,
+    } = place;
+
+    const handleBookNow = () => {
+       const bookedPlace = place;
+       bookedPlace.email = user.email;
+       bookedPlace.status = "pending";
+       console.log(bookedPlace);
+       fetch("http://localhost:5000/bookedPlace", {
+         method: "POST",
+         headers: { "content-type": "application/json" },
+         body: JSON.stringify(bookedPlace),
+       })
+       .then(res => res.json())
+       .then(result => {
+         if (result.insertedId) {
+           alert("Your booking placed Successfully");
+           history.push(redirect);
+         }
+       })
+    }
+   
     return (
       <div>
         <div className="text-center booking-image">
@@ -32,7 +53,7 @@ const BookingDetail = ({bookingDetail}) => {
         </div>
         <div className="booking-info">
           <h1>{name}</h1>
-          <h3>The Best Place to visit in {country}</h3>
+          <h3>One of The Best Place to visit in {country}</h3>
         </div>
         <div className="d-flex">
           <div>
@@ -60,15 +81,15 @@ const BookingDetail = ({bookingDetail}) => {
                 <hr />
                 <h6 className="fs-4">
                   <i className="fas fa-hotel fs-6 me-3 color-1"></i>
-                  {services.hotels[0]}
+                  {hotel1}
                 </h6>
                 <h6 className="fs-4">
                   <i className="fas fa-hotel fs-6 me-3 color-1"></i>
-                  {services.hotels[1]}
+                  {hotel2}
                 </h6>
                 <h6 className="fs-4">
                   <i className="fas fa-hotel fs-6 me-3 color-1"></i>
-                  {services.hotels[2]}
+                  {hotel3}
                 </h6>
               </div>
               <div className="my-5 ms-5">
@@ -76,15 +97,15 @@ const BookingDetail = ({bookingDetail}) => {
                 <hr />
                 <h6 className="fs-4">
                   <i className="fas fa-map-marker-alt fs-6 me-3 color-1"></i>
-                  {services.thingsToDo[0]}
+                  {spot1}
                 </h6>
                 <h6 className="fs-4">
                   <i className="fas fa-map-marker-alt fs-6 me-3 color-1"></i>
-                  {services.thingsToDo[1]}
+                  {spot2}
                 </h6>
                 <h6 className="fs-4">
                   <i className="fas fa-map-marker-alt fs-6 me-3 color-1"></i>
-                  {services.thingsToDo[2]}
+                  {spot3}
                 </h6>
               </div>
               <div className="my-5 ms-5">
@@ -99,9 +120,10 @@ const BookingDetail = ({bookingDetail}) => {
               </div>
             </div>
             <div className="text-center mb-5">
-              <Link to={`/booking-place/${id}`}>
-                <button className="primary-button px-5"><i className="fas fa-plus"></i> Book Now</button>
-              </Link>
+              {/* Book Now Button  */}
+              <button onClick={handleBookNow} className="primary-button px-5">
+                <i className="fas fa-plus"></i> Book Now
+              </button>
             </div>
           </div>
           <div className="booking-image">
@@ -109,9 +131,13 @@ const BookingDetail = ({bookingDetail}) => {
               <img src={image} alt="" height="700px" width="400px" />
             </div>
             <br />
-            <Link to={`/booking-place/${id}`}>
-              <button className="primary-button"> <i className="fas fa-plus"></i> Book Now</button>
-            </Link>
+
+            {/* Book Now Button  */}
+
+            <button onClick={handleBookNow} className="primary-button">
+              {" "}
+              <i className="fas fa-plus"></i> Book Now
+            </button>
           </div>
         </div>
       </div>

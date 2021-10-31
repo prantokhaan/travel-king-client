@@ -1,21 +1,37 @@
 import React from 'react';
-import { useParams } from 'react-router';
 import useBooking from '../../../Hooks/useBooking';
 import usePackages from '../../../Hooks/usePackages';
-import ConfirmBooking from '../ConfirmBooking/ConfirmBooking';
 
 const BookingPlace = () => {
-    const [bookingPlace] = useBooking();
+    const [packages] = usePackages();
+    const [place] = useBooking();
+    const { name } = place;
+
+    const spinnerStyle = {
+      width: "3rem",
+      height: "3rem",
+    };
 
     return (
-        <div>
-           {
-               bookingPlace?.map(bookingPlace => <ConfirmBooking
-               key={bookingPlace.id}
-               bookingPlace={bookingPlace}
-               ></ConfirmBooking>)
-           }
-        </div>
+      <div>
+        {/* <div>
+          {!packages.length ? (
+            <div className="text-center my-5 py-5">
+              <div
+                className="spinner-grow color-1 mt-5"
+                style={spinnerStyle}
+                role="status"
+              >
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <ConfirmBooking place={place} />
+            </div>
+          )}
+        </div> */}
+      </div>
     );
 };
 

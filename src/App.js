@@ -15,8 +15,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import ManageBookings from './Pages/Profile/ManageBookings/ManageBookings';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Booking/Booking/Booking';
-import BookingDetail from './Pages/Booking/BookingDetail/BookingDetail';
-import AddService from './Pages/Profile/AddService/AddService';
+import AddPlace from './Pages/Profile/AddPlace/AddPlace';
 import BookingPlace from './Pages/Booking/BookingPlace/BookingPlace';
 import Footer from './Pages/Home/Footer/Footer';
 
@@ -33,15 +32,15 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
-            <PrivateRoute path="/packages">
+            <Route path="/packages">
               <Packages />
-            </PrivateRoute>
-            <PrivateRoute path="/package/:bookingId">
+            </Route>
+            <PrivateRoute path="/place/:bookingId">
               <Booking />
             </PrivateRoute>
-            <PrivateRoute path="/booking-place/:bookingId">
+            {/* <PrivateRoute path="/booking-place/:bookingId">
               <BookingPlace />
-            </PrivateRoute>
+            </PrivateRoute> */}
             <Route path="/gallery">
               <Photos />
             </Route>
@@ -63,10 +62,9 @@ function App() {
             <PrivateRoute path="/manage-bookings">
               <ManageBookings />
             </PrivateRoute>
-            <PrivateRoute path="/add-service">
-              <AddService />
+            <PrivateRoute path="/add-place">
+              <AddPlace />
             </PrivateRoute>
-
             <Route path="*">
               <NotFound />
             </Route>

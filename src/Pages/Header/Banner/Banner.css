@@ -13,9 +13,9 @@
 }
 .banner .content h3 {
     font-size: 3.5rem;
-    color: rgba(241, 241, 236, 0.664);
+    color: rgb(241, 241, 236);
     text-transform: uppercase;
-    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.548);
     font-family: 'Oswald', sans-serif ;
 }
 .banner .content p {

@@ -6,6 +6,7 @@ import './Packages.css'
 
 const Packages = () => {
     const [packages] = usePackages();
+    console.log(packages)
     const spinnerStyle = {
       width: "3rem",
       height: "3rem",

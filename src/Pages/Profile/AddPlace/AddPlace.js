@@ -1,20 +1,36 @@
 import React from 'react';
-import { useForm } from "react-hook-form";
+import Select from "react-select";
+import { useForm, Controller } from "react-hook-form";
 
 
-const AddService = () => {
+const AddPlace = () => {
     const style = {
-        marginTop: "3.5rem",
         padding: "2.5rem 0",
         paddingLeft: "30%"
     }
     const {
       register,
       handleSubmit,
+      reset,
+      control, 
       watch,
       formState: { errors },
     } = useForm();
-    const onSubmit = (data) => console.log(data);
+    const onSubmit = (data) => {
+        console.log(data);
+        fetch(`http://localhost:5000/addPlace`, {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(data),
+        })
+          .then((res) => res.json())
+          .then((result) => {
+            if (result.insertedId) {
+                    alert('Your inserted Place Added Succesfully')
+                    reset();
+                }
+          });
+    };
     return (
       <div>
         <h1 class="heading">
@@ -31,17 +47,18 @@ const AddService = () => {
           <span>W</span>
           <span className="space">{""}</span>
 
-          <span>S</span>
-          <span>E</span>
-          <span>R</span>
-          <span>V</span>
-          <span>I</span>
+          <span>P</span>
+          <span>L</span>
+          <span>A</span>
           <span>C</span>
           <span>E</span>
         </h1>
         <div className="bg-1 ps-5 mx-5 rounded-3">
           <div className="text-center" style={style}>
             <form onSubmit={handleSubmit(onSubmit)} className="w-50">
+                <div>
+                    <h6>Info</h6>
+                </div>
               <input
                 {...register("name", { required: true })}
                 placeholder="Tour Spot Name"
@@ -52,6 +69,9 @@ const AddService = () => {
                 placeholder="Which Country?"
                 className="form-control my-3 text-center"
               />
+              <div>
+                  <h6>Some Description</h6>
+              </div>
               <textarea
                 {...register("description", { required: true })}
                 placeholder="Short Description (Upto 200 Letter)"
@@ -67,20 +87,51 @@ const AddService = () => {
                 placeholder="When should go there?"
                 className="form-control my-3 text-center py-4"
               />
+              <div>
+                <h6>Name three best hotel of that place</h6>
+              </div>
               <input
-                {...register("hotels", { required: true })}
-                placeholder="Name three best hotel of that Place"
+                {...register("hotel1")}
+                placeholder="Hotel No 1"
                 className="form-control my-3 text-center"
               />
               <input
-                {...register("thingsToDo", { required: true })}
-                placeholder="Name three best travel spots of that Place"
+                {...register("hotel2")}
+                placeholder="Hotel No 2"
                 className="form-control my-3 text-center"
               />
+              <input
+                {...register("hotel3")}
+                placeholder="Hotel No 3"
+                className="form-control my-3 text-center"
+              />
+              <div>
+                <h6>Name three best travel spots of that place</h6>
+              </div>
+              <input
+                {...register("spot1")}
+                placeholder="Spot No 1"
+                className="form-control my-3 text-center"
+              />
+              <input
+                {...register("spot2")}
+                placeholder="Spot No 2"
+                className="form-control my-3 text-center"
+              />
+              <input
+                {...register("spot3")}
+                placeholder="Spot No 3"
+                className="form-control my-3 text-center"
+              />
+              <div>
+                  <h6>Rating and Image</h6>
+              </div>
               <input
                 {...register("rating", { required: true })}
                 placeholder="Overall Rating"
                 className="form-control my-3 text-center"
+                type="number"
+                max="5"
               />
               <input
                 {...register("image", { required: true })}
@@ -102,4 +153,4 @@ const AddService = () => {
     );
 };
 
-export default AddService;
+export default AddPlace;

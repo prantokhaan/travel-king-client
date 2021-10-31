@@ -80,8 +80,8 @@ const Navbar = () => {
                         </Link>
                       </div>
                       <div>
-                        <Link class="dropdown-item" to="/add-service">
-                          Add a New Service
+                        <Link class="dropdown-item" to="/add-place">
+                          Add a New Place
                         </Link>
                       </div>
                       <hr className="dropdown-divider" />

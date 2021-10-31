@@ -5,10 +5,12 @@
     "country": "France",
     "description": "The magnetic City of Light draws visitors from around the globe who come to see iconic attractions like the Eiffel Tower, the Louvre and the Arc de Triomphe. But what travelers really fall in love with are the city's quaint cafes, vibrant markets, trendy shopping districts and unmistakable je ne sais quoi charm. Get lost wandering along Paris' cobblestone streets, or grab a croissant and relax on the banks of the Seine for hours. If you're up for a quick daytrip, head about 15 miles southwest of the city center to another must-see attraction: the Palace of Versailles",
     "rating": 4.6,
-    "services": {
-      "hotels": ["le bristol", "hotel george", "mendarin orient"],
-      "thingsToDo": ["notredam cathredal", "musse de louvre", "eiffel tower"]
-    },
+    "hotel1": "le bristol",
+    "hotel2": "hotel george",
+    "hotel3": "mendarin orient",
+    "spot1": "notredam cathredal",
+    "spot2": "musse de louvre",
+    "spot3": "eiffel tower",
     "image": "https://i.ibb.co/Jz175Cp/image.png",
     "coverImage": "https://i.ibb.co/dtFmJFQ/image.png",
     "whyToGo": "The City of Light draws millions of visitors every year with its unforgettable ambiance. Of course, the divine cuisine and vast art collections deserve some of the credit as well. The gentle River Seine rambles through the city, flanked by stately museums, centuries-old churches, and blocks of Rococo- and Neoclassic-design architecture, further enhanced by cascading trees and glowing streetlamps. Peppering the Seine's cobbled walks and graceful bridges are impossibly chic Parisians, probably on their way to the market, cafe or cinema.",
@@ -20,14 +22,12 @@
     "country": "French Polynesia",
     "description": "What this small French Polynesian island may lack in size it makes up for in sheer tropical beauty. Here, you'll find picturesque beaches, lush jungles and luxurious resorts. The island's dormant volcano, Mount Otemanu, makes for a great photo-op or challenging hike, and the friendly Bora Bora locals can help you catch a glimpse of the island's best sights during an off-road excursion. To relax, head to Matira Beach for crystal-clear water and soft sand. Although a trip to Bora Bora is very expensive, most travelers say it's worth every penny.",
     "rating": 4.4,
-    "services": {
-      "hotels": [
-        "Blue Heaven Island",
-        "Bora Bora eden beach",
-        "sefitel private island"
-      ],
-      "thingsToDo": ["matira beach", "excursion", "coral garden"]
-    },
+    "hotel1": "Blue Heaven Island",
+    "hotel2": "Bora Bora eden beach",
+    "hotel3": "sefitel private island",
+    "spot1": "matira beach",
+    "spot2": "excursion",
+    "spot3": "coral garden",
     "image": "https://i.ibb.co/T2Q4GVq/image.png",
     "coverImage": "https://i.ibb.co/TPVXkgb/image.png",
     "whyToGo": "The small island of Bora Bora (just about 6 miles long and a little more than 2 miles wide) overflows with beauty. A dormant volcano rises up at its center and fans out into lush jungle before spilling into an aquamarine lagoon. In fact, author James Michener, who wrote 'Tales of the South Pacific,' called Bora Bora 'the most beautiful island in the world.' The 18th-century British explorer James Cook even coined it as the 'Pearl of the Pacific.",
@@ -39,14 +39,12 @@
     "country": "USA",
     "description": "Whether you're driving along the Road to Hana, enjoying a bird's-eye view of the lush coastline from a helicopter, snorkeling with sea turtles or simply relaxing on the Hawaiian island's honey- or black-colored beaches, you'll find that Maui is unlike any other tropical destination. Don't miss a chance to visit Haleakala National Park, which is home to the world's largest dormant volcano. You should also attend a luau for a dose of local culture and a taste of Hawaiian specialties like poi, poke and mahimahi.",
     "rating": 4.5,
-    "services": {
-      "hotels": ["Four Seasons Resort", "Montage Kapalua Bay", "Hotel Wailea"],
-      "thingsToDo": [
-        "Read to hana",
-        "haleakala national park",
-        "wainapanapa state park"
-      ]
-    },
+    "hotel1": "Four Seasons Resort",
+    "hotel2": "Montage Kapalua Bay",
+    "hotel3": "Hotel Wailea",
+    "spot1": "Read to hana",
+    "spot2": "haleakala national park",
+    "spot3": "wainapanapa state park",
     "image": "https://i.ibb.co/qgD3TSG/image.png",
     "coverImage": "https://i.ibb.co/sVRJL7c/image.png",
     "whyToGo": "Maui is not nearly as large as the Big Island, nor is it as small as Lanai, as bustling as Oahu or as quiet as Kauai. For many Hawaii vacationers, Maui is just right – offering a taste of just about everything the Aloha State has to offer, from impressive wildlife to intriguing history and culture. While on a visit here, you can shimmy alongside professional hula dancers, golf along coastal fairways, sail down a zip line, snorkel alongside five different types of sea turtles or simply lounge along some of Hawaii's most notable beaches.",
@@ -58,14 +56,12 @@
     "country": "France",
     "description": "Travel to this island – the largest in French Polynesia – if you've been dreaming of a vacation spent lazing in a lavish overwater bungalow. Beyond the posh resorts, Tahiti boasts black sand beaches, a bustling capital and prime snorkeling and surfing conditions. If you're looking for more cultural experiences, check out some of the island's ancient temples or shop at its traditional covered markets. To save money, opt to stay in a vacation rental",
     "rating": 4.2,
-    "services": {
-      "hotels": [
-        "hotel royal",
-        "hotel tahiti nui",
-        "intercontinental tahiti resort"
-      ],
-      "thingsToDo": ["la pleg", "fautana waterfall", "papenoo beach"]
-    },
+    "hotel1": "hotel royal",
+    "hotel2": "hotel tahiti nui",
+    "hotel3": "intercontinental tahiti resort",
+    "spot1": "la pleg",
+    "spot2": "fautana waterfall",
+    "spot3": "papenoo beach",
     "image": "https://i.ibb.co/f8gyTh3/image.png",
     "coverImage": "https://i.ibb.co/0K1ZbBS/image.png",
     "whyToGo": "Miles of shoreline, dozens of resorts, French cuisine to die for – Tahiti has all the makings of a honeymoon destination. But beach bums often pass over Tahiti's sands in favor of Bora Bora's ivory shores. Despite its idyllic reputation and accessibility, Tahiti is more of an off-the-beaten-path stop than a romantic getaway. However, that doesn't mean Tahiti should be ignored.",
@@ -77,10 +73,12 @@
     "country": "spain",
     "description": "This Spanish city is a feast for the eyes: Visitors can walk past medieval architecture in the Barri Gòtic, snap photos of the intricate Basilica de la Sagrada Família and marvel at Antoni Gaudí's whimsical creations in Park Güell. La Barceloneta beach and the Parc de la Ciutadella are perfect places to pass the time on a sunny day before checking out the restaurants and bars along Las Ramblas, which buzzes at all hours of the night. For travelers who want to see Barcelona from above, trek up Mount Tibidabo or to the Bunkers del Carmel.",
     "rating": 4.9,
-    "services": {
-      "hotels": ["almanac", "hotel arts", "el palace"],
-      "thingsToDo": ["park guel", "marcet de sant", "barri gotic"]
-    },
+    "hotel1": "almanac",
+    "hotel2": "hotel arts",
+    "hotel3": "el palace",
+    "spot1": "park guel",
+    "spot2": "marcet de sant",
+    "spot3": "barri gotic",
     "image": "https://i.ibb.co/vkvj81t/image.png",
     "coverImage": "https://i.ibb.co/dQm73qG/image.png",
     "whyToGo": "Barcelona contains both the authentically historic and the wildly bizarre. From the scenic trails of the colorful Park Güell to the romantic narrow alleys of Barri Gòtic; from the beachside nightclubs to the city's dozens of sacred churches and architectural marvels, this city by the sea seems to attract all types: the adventurer, the couple, the partier, the culture lover – and more – with an almost overwhelming variety of things to do. You could stay for a few days, but chances are you'll need a whole week to explore. In Barcelona, even the beach is bustling, but it's really the cosmopolitan city that gets all the attention. Much of the activity revolves around Las Ramblas, a series of narrow streets and alleys packed with restaurants, nightclubs and a vibrant pedestrian market. But you should also take a tour of Antoni Gaudí's masterpieces; Gaudí is responsible for sites like Casa Milà, Casa Batlló and La Sagrada Familia. You also shouldn't miss out on the eclectic shopping scene and the region's exquisite food and wine. You see why we suggest a week vacation? To get a lay of the land, consider signing up for one of the city's best guided tours.",
@@ -92,10 +90,12 @@
     "country": "maldives",
     "description": "It is not cheap or easy to reach, but this isolated paradise between the Arabian and Laccadive seas is the personification of a dreamy tropical vacation. In this South Asian destination, which is made up of more than 1,000 islands, thatched-roof bungalows sit above crystal-clear aquamarine waters, providing easy water access and a romantic atmosphere. Fill your days with beach trips, spa treatments and snorkeling or scuba diving excursions. If cabin fever sets in, pay a visit to the capital, Malé, where you'll find historic mosques and open-air markets",
     "rating": 4.6,
-    "services": {
-      "hotels": ["vivanta", "per aquum", "st. regis"],
-      "thingsToDo": ["maldives beaches", "male", "scuba diving"]
-    },
+    "hotel1": "vivanta",
+    "hotel2": "per aquum",
+    "hotel3": "st. regis",
+    "spot1": "maldives beaches",
+    "spot2": "male",
+    "spot3": "scuba diving",
     "image": "https://i.ibb.co/qWnMTN1/image.png",
     "coverImage": "https://i.ibb.co/88N7jfF/image.png",
     "whyToGo": "You've seen photos of the Maldives before: picture-perfect private villas suspended over striking blue waters, alabaster white sand beaches and spectacular sunsets dipping into the horizon. The scenic beauty of the Maldives is something to behold, something you can't quite understand until you're there in person.",
@@ -107,10 +107,12 @@
     "country": "indonesia",
     "description": "Serene temples and beautiful beaches are the biggest draws to this lush Indonesian paradise. And we do mean lush – the region's notoriously soggy wet season is best avoided by planning a visit between April and October. Break up your beach time with a visit to the village of Kintamani, home to a towering (and active) volcano, as well as a large lake. If you're craving an adrenaline rush, rent a scooter and zip around the island, or hop on one of Bali's many swings to soar above rice terraces and jungles",
     "rating": 4.3,
-    "services": {
-      "hotels": ["samsara ubud", "komaneka", "matahari"],
-      "thingsToDo": ["pura tirta empul", "uluatw temple", "tanah lot temple"]
-    },
+    "hotel1": "samsara ubud",
+    "hotel2": "komaneka",
+    "hotel3": "matahari",
+    "spot1": "pura tirta empul",
+    "spot2": "uluatw temple",
+    "spot3": "tanah lot temple",
     "image": "https://i.ibb.co/K6Wn67W/image.png",
     "coverImage": "https://i.ibb.co/ct5h7LP/image.png",
     "whyToGo": "Shangri-La, Elysium, Arcadia, Utopia and Bali are all synonymous with 'heaven.' The only difference between them is that you can actually visit Bali. Many travelers have never been to this Indonesian island. Yet, the word 'Bali' conjures daydreams of the most fantastical landscape: towering volcanoes wrapped in a deep green canopy, sandy shores that fade into turquoise waters and curving coastlines crowned with staggered pagodas. And believe it or not, Bali rarely disappoints.",
@@ -122,10 +124,12 @@
     "country": "usa",
     "description": "Year after year, millions of visitors travel to California's Yosemite National Park to stand in awe of natural wonders like Half Dome and Yosemite Falls. Take in the panoramic views from the Glacier Point and Tunnel View overlooks. Hit the hiking trails early in the day to avoid crowds looking for the perfect photo-op. If you're eager to learn more about the park, visit educational centers like the Yosemite Museum and the Indian Village of the Ahwahnee. To save money, skip the hotel and camp out for the full experience (just be sure to book your spot well in advance)",
     "rating": 3.9,
-    "services": {
-      "hotels": ["tenaya lodge", "the ahwahne", "yosemite view lodge"],
-      "thingsToDo": ["yosemite valley", "tunnel view", "glacier point"]
-    },
+    "hotel1": "tenaya lodge",
+    "hotel2": "the ahwahne",
+    "hotel3": "yosemite view lodge",
+    "spot1": "yosemite valley",
+    "spot2": "tunnel view",
+    "spot3": "glacier point",
     "image": "https://i.ibb.co/pZK6fFP/image.png",
     "coverImage": "https://i.ibb.co/ypMsqMF/image.png",
     "whyToGo": "One of California's most formidable natural landscapes, Yosemite National Park features nearly 1,200 square miles of sheer awe: towering waterfalls, millennia-old sequoia trees, striking, daunting cliff faces and some of the most unique rock formations in the United States. But despite its enormous size, most of the tourist activity takes place within the 8-square-mile area of Yosemite Valley. Here you'll find the park's most famous landmarks – Half Dome and El Capitan – as well as excellent hiking trails through the natural monuments. Even inexperienced hikers can enjoy Yosemite: Guided tours and climbing lessons are available from local adventure outfitters. Just don't expect to experience it by yourself. Like so many other American tourist destinations, crowds are the biggest obstacles to an enjoyable Yosemite vacation – approximately 4 million people visit each year. But if you go at the right time (and start your day a little earlier than usual), Mother Nature's wonders will reveal themselves to you in a miraculous and serene way.",
@@ -137,10 +141,12 @@
     "country": "italy",
     "description": "Florence offers plenty of world-famous attractions, including the Duomo, Piazzale Michelangelo and Piazza della Signoria. Plus, it's a haven for art lovers thanks to art-focused museums like the Galleria dell'Accademia and the Uffizi Gallery. After appreciating this historic Italian city's Renaissance architecture and art, sample some of the region's delectable Tuscan food and wine at Florence's quaint cafes, gelato shops and ristorantes. Then, cross the Ponte Vecchio to get to the acclaimed Pitti Palace and the Boboli Gardens, where you'll find fountains, meticulously landscaped green spaces and panoramic views.",
     "rating": 4.1,
-    "services": {
-      "hotels": ["four seasons hotel", "jk place", "villa coraa"],
-      "thingsToDo": ["pizza della signoria", "duomo", "piazzale michelangelo"]
-    },
+    "hotel1": "four seasons hotel",
+    "hotel2": "jk place",
+    "hotel3": "villa coraa",
+    "spot1": "pizza della signoria",
+    "spot2": "duomo",
+    "spot3": "piazzale michelangelo",
     "image": "https://i.ibb.co/fG8tSY8/html-content-titled-hyperlink-title-photo-1528114039593-4366cc08227d.jpg",
     "coverImage": "https://i.ibb.co/D1rkXcc/image.png",
     "whyToGo": "This little city, tucked amid the Tuscan hills, casts a long shadow through history. The wellspring of the Renaissance, Firenze (or Florence) sheltered the powerful Medici family and inspired artists like Michelangelo (David) and Brunelleschi (the Duomo). If it weren't for the fashionable Italians and chic shops lining Via Tornabuoni, you might think you had traveled back in time to the 14th century. But Renaissance art is not the only reason to come: You also visit Florence for its gorgeous sunsets, its Italian cooking and its romantic charm. Make the most of your time in the city by letting a local show you around on one of Florence's best tours.",
@@ -152,10 +158,12 @@
     "country": "canada",
     "description": "A spectacular cluster of three waterfalls, Niagara Falls is a must-see if you want a glimpse of some of North America's best natural sites. You can experience the falls from below on the famous Maid of the Mist boat tour or marvel at the scene from above in the Skylon Tower. There are also miles of hiking trails around the falls that provide breathtaking views. Regardless of whether you stay on the New York or Canadian side of the falls, you'll enjoy easy access to all of this natural wonder's impressive panoramas",
     "rating": 4.7,
-    "services": {
-      "hotels": ["oban inn", "harbour house", "sterling inn"],
-      "thingsToDo": ["maid of the mist", "niagara parks", "oldfort"]
-    },
+    "hotel1": "oban inn",
+    "hotel2": "harbour house",
+    "hotel3": "sterling inn",
+    "spot1": "maid of the mist",
+    "spot2": "niagara parks",
+    "spot3": "oldfort",
     "image": "https://i.ibb.co/BKT16KS/image.png",
     "coverImage": "https://i.ibb.co/dB5cQyL/image.png",
     "whyToGo": "It's not hard to understand why many consider Niagara Falls a top natural wonder of the world. Or why it has been the location of some incredible (and now illegal) daredevil antics over the years. The second you see the mammoth Niagara River rumbling toward a 188-foot waterfall at about 20 to 30 (and up to 68) mph, your mouth will drop. The speed at which the river falls creates a misty fog and an unmistakable roar heard from miles away. From the top, crowds flock to the railings to feel the mist on their faces. As you follow the water's path downward, boats, platforms and observation decks support colorful poncho-clad visitors.",
@@ -167,14 +175,12 @@
     "country": "usa",
     "description": "Home to some of America's most recognizable landmarks – including the Golden Gate Bridge, Fisherman's Wharf and Alcatraz Island – San Francisco has the ability to satisfy outdoorsy types, foodies and curious wanderers of all ages. Prioritize exploring the Castro district, eating your way through Chinatown, browsing the thrift shops in Haight-Ashbury and admiring nearby Muir Woods National Monument. Don't forget to also save time for a picnic with a city view in a popular spot like Bernal Heights Park or Mission Dolores Park",
     "rating": 3.8,
-    "services": {
-      "hotels": ["the ritz carlton", "the inn above tide", "the st. regis"],
-      "thingsToDo": [
-        "california academy of science",
-        "golden gate bridge",
-        "golden gate park"
-      ]
-    },
+    "hotel1": "the ritz carlton",
+    "hotel2": "the inn above tide",
+    "hotel3": "the st. regis",
+    "spot1": "california academy of science",
+    "spot2": "golden gate bridge",
+    "spot3": "golden gate park",
     "image": "https://i.ibb.co/ySLy5tg/image.png",
     "coverImage": "https://i.ibb.co/hd0zfMW/image.png",
     "whyToGo": "A jumbled collage of colorful neighborhoods and beautiful views, San Francisco draws those free-spirited types who have an eye for edgy art, a taste for imaginative cuisine and a zeal for adventure. It's really not surprising that songwriter Tony Bennett left his heart here: The city boasts jaw-dropping sights, world-class cuisine, cozy cafes and plenty of booming nightlife venues – there's no shortage of ways to stay busy here. Spend an hour or two sunning yourself alongside sea lions on the bay, admiring the views of the city from Twin Peaks, or strolling along the Marina. And for the quintessential San Franciscan experience, enjoy a ride on a cable car or hop on a boat tour for a cruise beneath the Golden Gate Bridge.",
@@ -186,14 +192,12 @@
     "country": "australia",
     "description": "The globe's largest coral reef system – and one of the original Seven Natural Wonders of the World – touts incredible scenery. At Australia's Great Barrier Reef, you'll find more than 600 islands and 1,500-plus species of fish. Though plenty of diving and snorkeling spots can be found along Queensland's coast, to escape the crowds, visit the Whitsunday Islands. Also save time for viewing the reef from above during a flightseeing excursion",
     "rating": 4.1,
-    "services": {
-      "hotels": ["the northern green house", "marina shores", "lizard island"],
-      "thingsToDo": [
-        "great barrier reef driving",
-        "cairns",
-        "whiteheaven beach"
-      ]
-    },
+    "hotel1": "the northern green house",
+    "hotel2": "marina shores",
+    "hotel3": "lizard island",
+    "spot1": "great barrier reef driving",
+    "spot2": "cairns",
+    "spot3": "whiteheaven beach",
     "image": "https://i.ibb.co/VM8NhXC/image.png",
     "coverImage": "https://i.ibb.co/VDCnMN6/image.png",
     "whyToGo": "As one of the original Seven Natural Wonders of the World, the Great Barrier Reef holds a spot on every traveler's bucket list. Hugging the east coast of Queensland, Australia, the Great Barrier Reef extends from Cape York in the north all the way to Bundaberg in the south – more than 1,800 miles. With roughly 2,900 coral reefs, 600 islands and 1,500-plus species of fish, the reef leaves its 2 million annual visitors enchanted.",

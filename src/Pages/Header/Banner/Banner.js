@@ -64,7 +64,7 @@ const Banner = () => {
               ></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active w-100">
+              <div class="carousel-item active">
                 {/* <video src={vidOne} loop autoPlay muted alt="..." /> */}
                 <img
                   src="https://images.unsplash.com/photo-1510041883570-1c5b27d85cb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=825&q=80"

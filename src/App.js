@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Pages/Header/Header/Header';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -16,7 +15,6 @@ import ManageBookings from './Pages/Profile/ManageBookings/ManageBookings';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Booking/Booking/Booking';
 import AddPlace from './Pages/Profile/AddPlace/AddPlace';
-import BookingPlace from './Pages/Booking/BookingPlace/BookingPlace';
 import Footer from './Pages/Home/Footer/Footer';
 
 function App() {

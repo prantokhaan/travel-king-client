@@ -21,7 +21,7 @@ const Navbar = () => {
             <i className="fas fa-suitcase-rolling ps-4 pe-2"></i>
 
             {/* Logo  */}
-            <Link to="/" className="text-decoration-none color-2 logo-link">
+            <Link to="/" className="text-decoration-none color-2 logo-link text-sm-center">
               <h3 className="logo">
                 Trav<span className="color-1 logo">E</span>l Ki
                 <span className="color-1 logo">N</span>g
@@ -50,9 +50,11 @@ const Navbar = () => {
             <div className="mt-2 conditional-button">
               {user.email || user.displayName ? (
                 <div className="d-flex">
-                  <div class="dropdown">
+
+                  {/* Dropdown Button  */}
+                  <div className="dropdown">
                     <button
-                      class="secondary-button me-2 mt-1 text-capitalize"
+                      className="secondary-button me-2 mt-1 text-capitalize"
                       type="button"
                       id="dropdownMenuButton1"
                       data-bs-toggle="dropdown"
@@ -61,26 +63,26 @@ const Navbar = () => {
                       {user.displayName} <i className="fas fa-sort-down"></i>
                     </button>
                     <div
-                      class="dropdown-menu bg-1 box-shadow"
+                      className="dropdown-menu bg-1 box-shadow"
                       aria-labelledby="dropdownMenuButton1"
                     >
                       <div>
-                        <Link class="dropdown-item" to="/my-profile">
+                        <Link className="dropdown-item" to="/my-profile">
                           My Profile
                         </Link>
                       </div>
                       <div>
-                        <Link class="dropdown-item" to="/my-bookings">
+                        <Link className="dropdown-item" to="/my-bookings">
                           My Bookings
                         </Link>
                       </div>
                       <div>
-                        <Link class="dropdown-item" to="/manage-bookings">
+                        <Link className="dropdown-item" to="/manage-bookings">
                           Manage Bookings
                         </Link>
                       </div>
                       <div>
-                        <Link class="dropdown-item" to="/add-place">
+                        <Link className="dropdown-item" to="/add-place">
                           Add a New Place
                         </Link>
                       </div>
@@ -88,7 +90,7 @@ const Navbar = () => {
                       <div>
                         <Link
                           onClick={logOut}
-                          class="dropdown-item"
+                          className="dropdown-item"
                           to="/manage-bookings"
                         >
                           Log Out
@@ -96,6 +98,8 @@ const Navbar = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* Logout and Login  */}
                   <button
                     onClick={logOut}
                     className="primary-button ms-0 transition"

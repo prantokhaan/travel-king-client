@@ -12,7 +12,7 @@ const MyBooking = ({booking}) => {
           "Are you sure, you want to cancel this plan?"
         );
         if(proceed){
-            fetch(`http://localhost:5000/cancelBooking/${_id}`, {
+            fetch(`https://shrieking-goosebumps-13781.herokuapp.com/cancelBooking/${_id}`, {
                 method: "DELETE",
                 headers: {"content-type": "application/json"}
             })

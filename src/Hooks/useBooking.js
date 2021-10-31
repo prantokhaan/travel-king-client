@@ -7,7 +7,9 @@ const useBooking = () => {
     const [place, setPlace] = useState({});
 
      useEffect(() => {
-       fetch(`http://localhost:5000/place/${bookingId}`)
+       fetch(
+         `https://shrieking-goosebumps-13781.herokuapp.com/place/${bookingId}`
+       )
          .then((res) => res.json())
          .then((data) => setPlace(data));
      }, []);

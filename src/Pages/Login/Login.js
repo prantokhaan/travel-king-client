@@ -10,6 +10,8 @@ const Login = () => {
   const redirect = location.state?.from || "/home";
   console.log(location)
 
+  
+  // Google Sign IN 
   const handleGoogleLogin = () => {
     signInUsingGoogle().then((result) => {
       history.push(redirect);

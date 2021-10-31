@@ -11,7 +11,8 @@ const Photos = () => {
     };
     return (
       <div>
-        <h1 class="heading">
+        {/* Heading  */}
+        <h1 className="heading">
           <span>G</span>
           <span>A</span>
           <span>L</span>
@@ -21,6 +22,7 @@ const Photos = () => {
           <span>Y</span>
         </h1>
 
+        {/* Spinner and Photos  */}
         {!photos.length ? (
           <div className="text-center my-5 py-5">
             <div

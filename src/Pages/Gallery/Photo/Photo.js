@@ -4,10 +4,12 @@ import './Photo.css'
 const Photo = ({photo}) => {
     const {img, location} = photo;
     return (
+
+        // Gallery Image 
         <div className="gallery">
-            <div class="box">
+            <div className="box">
             <img src={img} alt="" />
-            <div class="content">
+            <div className="content">
                 <h3>{location.place}</h3>
                 <p>{location.country}</p>
             </div>

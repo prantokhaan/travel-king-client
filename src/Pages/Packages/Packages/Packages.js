@@ -14,7 +14,7 @@ const Packages = () => {
     
     return (
       <div>
-        <h1 class="heading">
+        <h1 className="heading">
           <span>P</span>
           <span>A</span>
           <span>C</span>

@@ -8,11 +8,11 @@ const Package = ({place}) => {
 
     return (
       <div>
-        <div class="box">
+        <div className="box">
           <img src={image} alt="" />
-          <div class="content">
+          <div className="content">
             <h3>
-              <i class="fas fa-map-marker-alt"></i> {name}
+              <i className="fas fa-map-marker-alt"></i> {name}
               <span className="country">{country}</span>
             </h3>
 

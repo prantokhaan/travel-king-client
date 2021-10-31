@@ -18,7 +18,7 @@ const AddPlace = () => {
     } = useForm();
     const onSubmit = (data) => {
         console.log(data);
-        fetch(`http://localhost:5000/addPlace`, {
+        fetch(`https://shrieking-goosebumps-13781.herokuapp.com/addPlace`, {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),
@@ -33,7 +33,7 @@ const AddPlace = () => {
     };
     return (
       <div>
-        <h1 class="heading">
+        <h1 className="heading">
           <span>A</span>
           <span>D</span>
           <span>D</span>

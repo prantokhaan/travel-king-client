@@ -9,7 +9,7 @@ const ManageBookings = () => {
   const [status, setStatus] = useState(["Approved"]);
 
   useEffect(() => {
-    const url = "http://localhost:5000/allBookings";
+    const url = "https://shrieking-goosebumps-13781.herokuapp.com/allBookings";
     fetch(url)
       .then((res) => res.json())
       .then((result) => setBooking(result));
@@ -25,7 +25,7 @@ const ManageBookings = () => {
       "Are you sure, you want to cancel this plan?"
     );
     if (proceed) {
-      fetch(`http://localhost:5000/cancelBooking/${id}`, {
+      fetch(`https://shrieking-goosebumps-13781.herokuapp.com/cancelBooking/${id}`, {
         method: "DELETE",
         headers: { "content-type": "application/json" },
       })
@@ -45,7 +45,7 @@ const ManageBookings = () => {
     const newStatus = "approved";
     setStatus(newStatus);
     console.log(status)
-    fetch(`http://localhost:5000/updateStatus/${id}`, {
+    fetch(`https://shrieking-goosebumps-13781.herokuapp.com/updateStatus/${id}`, {
       method: "PUT",
       headers: {
         'content-type': 'application/json'

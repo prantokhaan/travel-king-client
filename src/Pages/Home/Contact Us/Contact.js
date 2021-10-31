@@ -5,7 +5,8 @@ import contactImg from '../../../images/Contact us-amico.svg'
 const Contact = () => {
     return (
       <div>
-        <h1 class="heading">
+        {/* Heading  */}
+        <h1 className="heading">
           <span>C</span>
           <span>O</span>
           <span>N</span>

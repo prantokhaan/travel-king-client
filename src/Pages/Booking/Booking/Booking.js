@@ -7,7 +7,7 @@ const Booking = () => {
     const [packages] = usePackages();
     const [place] = useBooking();
 
-
+    // Spinner Style 
     const spinnerStyle = {
       width: "3rem",
       height: "3rem",
@@ -15,6 +15,7 @@ const Booking = () => {
     return (
       <div>
         <div>
+          {/* Spinner  */}
           {!packages.length ? (
             <div className="text-center my-5 py-5">
               <div

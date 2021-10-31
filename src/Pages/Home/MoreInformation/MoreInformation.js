@@ -7,6 +7,8 @@ const MoreInformation = () => {
       <div>
         <div className="about section">
           <div className="about-container justify-content-between">
+
+            {/* Travel King Info  */}
             <div className="about-data">
               <h2 className="about-title">
                 More Information <br /> About
@@ -17,11 +19,14 @@ const MoreInformation = () => {
                 prices with special discounts, you choose the place we will
                 guide you all the way to wait, get your place now.
               </p>
+
+              {/* Button  */}
               <Link to="/packages">
                 <button className="ms-0 secondary-button">Discover More</button>
               </Link>
             </div>
 
+            {/* Image  */}
             <div className="about-img">
               <div className="about-img-overlay">
                 <img

@@ -8,7 +8,8 @@ const About = () => {
       <div className="my-3 container text-center">
         {/* About Section  */}
         <div className="section-title text-center mb-3">
-          <h1 class="heading">
+          {/* Heading  */}
+          <h1 className="heading">
             <span>A</span>
             <span>B</span>
             <span>O</span>

@@ -11,7 +11,7 @@ const MyBookings = () => {
 
 
     useEffect( () => {
-        fetch(`http://localhost:5000/myBookings/${user.email}`)
+        fetch(`https://shrieking-goosebumps-13781.herokuapp.com/myBookings/${user.email}`)
           .then((res) => res.json())
           .then((result) => setBooking(result));
           console.log(booking)
@@ -27,7 +27,7 @@ const MyBookings = () => {
          "Are you sure, you want to cancel this plan?"
        );
        if (proceed) {
-         fetch(`http://localhost:5000/cancelBooking/${id}`, {
+         fetch(`https://shrieking-goosebumps-13781.herokuapp.com/cancelBooking/${id}`, {
            method: "DELETE",
            headers: { "content-type": "application/json" },
          })

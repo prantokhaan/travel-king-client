@@ -6,8 +6,10 @@ import imgTwo from './../../../images/experience2.jpg';
 const Experience = () => {
     return (
       <div>
-        <section class="experience section">
-          <h1 class="heading">
+        <section className="experience section">
+
+          {/* Heading  */}
+          <h1 className="heading">
             <span>O</span>
             <span>U</span>
             <span>R</span>
@@ -23,37 +25,41 @@ const Experience = () => {
             <span>E</span>
           </h1>
 
-          <div class="experience-container">
-            <div class="experience-content">
-              <div class="experience-data">
-                <h2 class="experience-number">20</h2>
-                <span class="experience-description">
+
+          {/* Experience Item  */}
+          <div className="experience-container">
+            <div className="experience-content">
+              <div className="experience-data">
+                <h2 className="experience-number">20</h2>
+                <span className="experience-description">
                   Year <br /> Experience
                 </span>
               </div>
 
-              <div class="experience-data">
-                <h2 class="experience-number">750+</h2>
-                <span class="experience-description">
+              <div className="experience-data">
+                <h2 className="experience-number">750+</h2>
+                <span className="experience-description">
                   Complete <br /> tours
                 </span>
               </div>
 
-              <div class="experience-data">
-                <h2 class="experience-number">650+</h2>
-                <span class="experience-description">
+              <div className="experience-data">
+                <h2 className="experience-number">650+</h2>
+                <span className="experience-description">
                   Tourist <br /> Destination
                 </span>
               </div>
             </div>
 
-            <div class="experience-img grid">
-              <div class="experience-overlay">
-                <img src={imgOne} alt="" class="experience-img-one" />
+            {/* Image  */}
+
+            <div className="experience-img grid">
+              <div className="experience-overlay">
+                <img src={imgOne} alt="" className="experience-img-one" />
               </div>
 
-              <div class="experience-overlay">
-                <img src={imgTwo} alt="" class="experience-img-two" />
+              <div className="experience-overlay">
+                <img src={imgTwo} alt="" className="experience-img-two" />
               </div>
             </div>
           </div>

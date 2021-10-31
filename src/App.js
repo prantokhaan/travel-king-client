@@ -38,9 +38,6 @@ function App() {
             <PrivateRoute path="/place/:bookingId">
               <Booking />
             </PrivateRoute>
-            {/* <PrivateRoute path="/booking-place/:bookingId">
-              <BookingPlace />
-            </PrivateRoute> */}
             <Route path="/gallery">
               <Photos />
             </Route>
